@@ -1,0 +1,100 @@
+I studied AI course from my university and also from coursera called AI & its planning. The course was taken by professors of university of
+edinborough.
+
+My Project description :
+
+Research work is to prove that a robot can complete the task autonomously by finding the plan to the planning problem,
+when required knowledge is provided. 
+
+The Intelligent agent is designed using STRIPS planner and forward search space algorithm.
+
+Technologies: Robot Operating System (ROS), Robot in Concert (ROCON), PYQT, AVAHI, ZeroConf, PSQL
+
+What is Planning?
+
+Explicit deliberation process that chooses and organizes actions by anticipating their outcomes. Planning is designed by aiming at 
+acheiving pre-stated objectives. I mean goal oriented AI algorithms are planning problem.
+
+Why Planning algorithm used for goal oriented AI?
+
+Artificial Intelligence (AI) planning technique has the potential to think about the plans and reasons 
+about the actions that takes place during execution of a problem.
+
+Ok. What my project is about ?
+This project is to build an intelligent agent which is a domain-independent planner that chooses and 
+organizes actions by anticipating their outcomes.
+
+Anticpiating their outcomes means goal oriented search.
+Domain independent planner means - It can be adapted to any domain. Ex: Picking objects, Dock worker robot that moves, pick, locad
+and unload the containers.
+
+What is needed to find the plan to a planning problem?
+To find a plan to a planning problem, as set of initial states, actions and goal states are to be  encoded in a specific format.
+
+What is the format to specify the states and actions?
+STRIPS(Stanford Research Institute Problem Solver) representation provides a standardized ways of looking into the internal states 
+and the actions based on First Order Logic(FOL). The states of the problem and domain are  represented using a particular standard 
+called PDDL (Planning Domain Definition Syntax), in a way to decode it easily by an intelligent agent.
+
+Explain more on States and Actions:
+Predicates are the operators involved in this.
+Actions are move, pick, load, unload etc. It contains preconditions and effects.
+
+The algorithm is to find all the applicable actions to go from one state to another state. The state transition is from old state
+to new state
+when the old state matches the preconditions. 
+If it is mathced the effects of state transition will become the new preconditions.
+
+Until the goal is reached,
+The applicable actions are found.
+Once the goal is reached, then a list of actions added in the plan isreturned as the solution to the planning problem.
+
+What was the project I did in Rethink Robtics?
+The project is to make the Baxter robot to do the task on its own. 
+
+I saw a video where the Baxter works in a Burger shop and it makes burger every time. The Baxter was trained manually to do the burger.
+If the customer asks a different burger with changes in the ingredients, then the robot should be trained adain from first.
+
+I wondered, why don't we feed the knowledge to the robot and the robot finds on its own to make the burger as per customer needs ?
+
+So I decided to use the ideas that I learnt from AI & P course. I started from the basic one called forward search space algorithm, which
+is very similar to breadth first search where it goes state transition from one level to another level. Moreover, to make multiple
+robots to work together, I used the ROS library called ROCON - ROS in Concert. Due to less time, I decided not to fuse the intelligent
+agent with the robot and I kept it running in my system. And I used the ROCON library to propogate/broadcast to the robots that are paired
+with my system. 
+
+What is ROCON ?
+ROCON is a package built on ROS which opens up the hub and the gateway in the localhost and remote to advertise and
+pull the solution found by the intelligent agent. Advertise is a publisher node which publishes the
+planning solution in a robot understandable format and pull is a subscriber node in robot which pulls the published messages 
+using ROCON to act on it.
+
+What is the initial state in my research project?
+Three boxes X, Y, Z
+Three locations A,B,C
+Robot's
+Robot's left hand and right hand to move, pick and drop the boxes.
+
+What knowledge is fed to the robot?
+To move to the location A, B, C
+To pick the boxes X,Y,X
+To go deeper into the location if needed to pick the box.
+
+What are misc works I did?
+I created a neat user interface to interact with the intelligent agent. The interface will displays all the robots that are found,
+using AVAHI and Zeroconf logic. The user can select whatever the robots from the list that should do the task.
+
+Now in the other part of the interface, user can select which boxes to be placed in which location in any order. This is the goal state.
+Now the intelligent agent will find the solution for this using forward search space algorithm and it will display all the steps
+in chronological order in the interface. 
+
+Once the plan is found, the solutions will be progogated from the master machine which is a publisher node and the robots that are 
+paired will pull the solution using their subsriber node. Once the steps are found, the respective actions will be executed.
+
+By this, I have achieved
+
+Artificial Intelligence Planning – Decision Making Algorithms is implemented succesfully.
+Robotic Task and Simulation - Performs robots task autonomously by the robot with training it everytime.
+Human-Machine Interface development - An user interface by which customers can send the request to communicate with the intelligent 
+                                      agent/robot.
+
