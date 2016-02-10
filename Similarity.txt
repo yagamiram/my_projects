@@ -1,0 +1,89 @@
+What is this is about ?
+
+Finding similarity between two documents or Multiple documents or Two vectors or Multi-dimenisonal vectos.
+
+What is meant by Anomaly detections?
+
+Finding how much one differs from others. Opoosite of similarity.
+
+What is the best method to find the similarity between one or more or many things?
+1. Jaccord's co-efficient
+2. Peasron Co-efficient
+3. correlation
+4. Euclidean Distance
+
+What is the best method to find the dis-similarity between one or more or many things ?
+1. Jaccord's distance
+2. Gaussian Distribution
+
+============================================================================================================================
+Jaccord's co-efficient Formula : 
+
+For two sets A and B:
+J(A,B) = (Intersection of A and B)/(Union of A and B)
+
+0 <= J(A,B) <= 1
+
+What about multiple documents or multiple sets:
+
+J(X,Y) =  min(Xi, Yi)/max(Xi, Yi) [i from 1 to n]
+
+If two variables that takes 1 or 0 then what is the Jaccord's co-efficient ?
+J(A,B) = M11 / (M10+M11+M01) 
+
+M11 = If A is 1 and B is 1  [Intersection of A and B]
+M10 = If A is 1 and B is 0
+M01 = If A is 0 and B is 1
+M00 = If A is 0 and B is 0
+
+Note M00 is not included.
+
+Jaccord's co-efficient is better than other methods when the similarity is to find between binary data sets.
+==========================================================================================================================
+Euclidean Distance
+
+The formuls is sum of squared differences.
+
+Formula = d(x,y) = sqrt(summation(i to n) (xi-yi)^2)
+
+Works only when X and Y are in same scale. 
+
+Cons: It cannot be normalized.
+Not all datas are on same scale.
+
+=========================================================================================================================
+Correlation 
+
+It is invers of euclidean distance.
+
+Formula: r(X,Y) =covariance / (products of mean of X and Y)
+
+Covariance = the difference between the mean of the product of X and Y subtracted from the product of the means.
+
+Link: http://www.analytictech.com/mb876/handouts/distance_and_correlation.htm
+
+=========================================================================================================================
+Pearson's coefficient : Not written
+Bsically, is a linear correlation of X and Y
+=========================================================================================================================
+Anomaly Detection:
+
+1. Jaccords distance :
+
+It 1 - Jaccord's coefficient. That's it !
+
+2. Gaussian Distribution:
+
+Formula : https://en.wikipedia.org/wiki/Normal_distribution
+
+For the given vectors, values, data sets etc find the mean and variance for each one of them and subsitute it on gaussian
+distribution formula.
+
+If the probability is low it means the data set or input is anamoly. High probility means similarity.
+
+===========================================================================================================================
+
+Applications:
+
+1. RECOMMENDER SYSTEMS
+2. Summarization of multiple documents.
