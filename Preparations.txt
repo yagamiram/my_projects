@@ -1,0 +1,33 @@
+Which JavaScript libraries have you used?
+1.Validanguage is an unobtrusive JavaScript form validation framework.
+2. firebug - Firebug offers a stylish console to log, view and filter messages in JavaScript, which quickens the development process
+3. Date.js - Working with dates are always tricky. So many dots, slashes and formats. 
+             Datejs is a stunning library for simple to complex date functions. 
+             It can parse dates like: “Next thursday”, “+2 years” and all formats like 2009.01.08, 12/6/2001 etc.
+             
+4. Typesafe
+
+========================================================================
+How is JavaScript different from Java?
+1. Java is related to Javascript like how Ham is related to hamster. LOL
+2. Java is an OOP programming language while Java Script is an OOP scripting language.
+3. Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only.
+4. Java uses block-based scoping; JavaScript uses function-based scoping.
+5. Java has an implicit 'this' scope for non-static methods, and implicit class scope; JavaScript has implicit global scope.
+
+JavaScript is an object-oriented scripting language that allows you to create dynamic HTML pages, allowing you to process input 
+data and maintain data, usually within the browser.
+
+Java is a programming language, core set of libraries, and virtual machine platform that allows you to create compiled programs that run on nearly every platform, 
+without distribution of source code in its raw form or recompilation.
+=========================================================================
+What are undefined and undeclared variables?
+
+What is a closure, and how/why would you use one?
+Your favorite pattern used to create them? argyle (Only applicable to IIFEs)
+What's a typical use case for anonymous functions?
+Explain the "JavaScript module pattern" and when you'd use it.
+Bonus points for mentioning clean namespacing.
+What if your modules are namespace-less?
+how do you organize your code? (module pattern, classical inheritance?)
+What's the difference between host objects and native objects?
