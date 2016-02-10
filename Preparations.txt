@@ -1,3 +1,5 @@
+http://lucybain.com/blog/tags/interview-questions/
+
 Which JavaScript libraries have you used?
 1.Validanguage is an unobtrusive JavaScript form validation framework.
 2. firebug - Firebug offers a stylish console to log, view and filter messages in JavaScript, which quickens the development process
@@ -22,10 +24,51 @@ Java is a programming language, core set of libraries, and virtual machine platf
 without distribution of source code in its raw form or recompilation.
 =========================================================================
 What are undefined and undeclared variables?
+undeclared variables don’t even exist
+undefined variables exist, but don’t have anything assigned to them
+null variables exist and have null assigned to them
 
+A variable is undeclared when it does not use the var keyword. It gets created on the global object (that is, the window), thus it operates in a different space as the declared variables. It doesn't work in strict mode.
+
+Something is undefined when it hasn’t been defined yet. If you call a variable or function without having actually created it yet the parser will give you an not defined error.
+
+null is a variable that is defined to have a null value.
+========================================================================
 What is a closure, and how/why would you use one?
-Your favorite pattern used to create them? argyle (Only applicable to IIFEs)
+A closure is a way of keeping access to variables in a function after that function has returned.
+Usually you lose access to variables when a function returns but with closure you keep the variables of the function alive
+In a closure those variables stick around for a while longer since there is a reference to the variables after the function returns.
+But now why would I ever want to use a closure?
+
+Well, since closures keep access to the variables they can be used to save state. And things that save state look a whole lot like objects.
+
+function cat(name) {
+    return {
+        sayName: function() {
+            return name;
+        }
+    }
+}
+
+var fluffy = cat('Mr. Fluffy');
+fluffy.name // returns undefined
+fluffy.sayName() // returns 'Mr. Fluffy'
+
+var whiskers = cat('Whiskers');
+whiskers.sayName() // returns 'Whiskers'
+So this way you can create a whole bunch of cat objects that have a private name variable, which you can access via the sayName method.
+===============================================================================
 What's a typical use case for anonymous functions?
+Anonymous functions are typically used as callbacks.
+you can still have a reference to an anonymous function, but the name is directly attached to it.
+Anonymous functions are declared inline and inline functions have advantages in that they can access variables in the parent scopes.
+pros:
+speed.
+flexibility.
+When I will use?
+I'm gonna use this fn only once. Then make it into a anonymous function.
+ Ref :  http://lucybain.com/blog/2014/js-anonymous-referenced-declared-functions/
+===============================================================================
 Explain the "JavaScript module pattern" and when you'd use it.
 Bonus points for mentioning clean namespacing.
 What if your modules are namespace-less?
