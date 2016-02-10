@@ -1,0 +1,57 @@
+Collaborative Filtering
+========================
+
+What does it mean ?
+
+To predict movie ratings for the movie that user haven't seen yet.
+
+Recommender systems will take the ratings of the movies predicted by collaborative filtering and suggest the user 
+to watch it.
+
+How to build a model for collaborative filtering ?
+
+1. Cost function : Min (A sum of squared error ). The one which needs for line equation (?)
+2. Gradient function
+3. Regularization cost function: To avoid over fiting. 
+4. Regularized gradient
+
+Then build the model using training data.
+Multiple X and Theta = this will build a model.
+
+Theta is the cost function. (after applying the 4 steps)
+
+X is the training data/feature vectors.
+
+Now run new data on the model and get the predictions.
+-------------------------------------------------------------------------
+
+Collaborative filtering algorithms
+Memory-based algorithms:
+- Operate over the entire user-item database to make predictions.
+- Statistical techniques are employed to find the neighbors of the
+active user and then combine their preferences to produce a
+prediction.
+- Dynamic structure. More popular and widely used in practice.
+
+Example: https://github.com/guymorita/recommendationRaccoon
+
+Applies Similarity and Nearest neighbours algorithm.
+
+How Recommendation Racoon ?
+
+recommendation Raccoon uses the Jaccard Coefficient which is useful for measuring binary rating data (i.e. like/dislike).
+After a user's similarity is calculated with the Jaccard Coefficient, 
+a sorted set is created which represents how similar that user is to every other.
+When combined with hiredis, redis can get/set at ~40,000 operations/second using 50 concurrent connections without pipelining. 
+In short, Redis is extremely fast at set math and is a natural fit for a recommendation engine of this scale. 
+
+Model-based algorithms:
+- Input the user database to estimate or learn a model of user
+ratings, then run new data through the model to get a predicted
+output.
+- A prediction is computed through the expected value of a user
+rating, given his/her ratings on other items.
+- Static structure. In dynamic domains the model could soon
+become inaccurate.
+
+Example: Clustering algorithm and Bayesian networks
