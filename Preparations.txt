@@ -183,5 +183,35 @@ var person = Person('Dave', 'Gahan', '1962-05-09'); // returns string
 
 var person = new Person('Adam', 'Ant', '1954-11-03'); // returns object. and u can access the variables declared in the fucntion.
 ======================================================================================
+What's the difference between .call and .apply?
 
+the difference between call and apply. Both can be called on functions, which they run in the context of the first argument. In call the subsequent arguments are passed in to the function as they are, while apply expects the second argument to be an array that it unpacks as arguments for the called function.
 
+The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly.
+=====================================================================================
+explain Function.prototype.bind?
+
+when you realize that you need a solution to the problem of how to keep the context of this within another function, then you might not realize that what you actually need is Function.prototype.bind().
+======================================================================================
+Can you explain how inheritance works in JavaScript?
+
+You must use a special object called prototype which assigns properties to a type such as Animal. Only functions have a prototype, which is why you must create a function first:
+
+function Animal() {}; // This is the Animal *Type*
+Animal.prototype.eat = function () {
+    alert("All animals can eat!");
+};
+
+function Bird() {}; // Declaring a Bird *Type*
+Bird.prototype = new Animal(); // Birds inherit from Animal
+Bird.prototype.fly = function() {
+    alert("Birds are special, they can fly!");
+};
+
+The effect of this is that any Birds you create (called an instance of Bird) all have the properties of Animals, but they also have the additional .fly():
+===========================================================================
+When would you use document.write() ?
+document.write() shouldn’t be used after the page has loaded to change the content as it will overwrite the entire page 
+
+good time to use:;  it is a good choice for third party vendors to use it to add their scripts.
+===========================================================================
