@@ -278,5 +278,54 @@ all of the properties we set in the HTML are available through prop.
 Attributes are in the HTML itself, rather than in the DOM. It takes only string. 
 And it always points to the default value even the values are updated.
 ============================================================================================
+Difference between document load event and document ready event?
 
+$(document).ready() fires when the HTML has finished loading. You can’t interact with the DOM before the HTML has finished loading
+window.onload fires when all of the content (images, scripts, CSS, the whole lot) has finished loading.
 
+=============================================================================================
+What is the difference between == and ===?
+
+==== strict comparison
+
+The 3 equal signs mean "equality without type coercion". Using the triple equals, the values must be equal in type as well.
+
+0 == false   // true
+0 === false  // false, because they are of a different type
+1 == "1"     // true, automatic type conversion for value only
+1 === "1"    // false, because they are of a different type
+null == undefined // true
+null === undefined // false
+'0' == false // true
+'0' === false // false
+========================================================================
+Explain how you would get a query string parameter from the browser window's URL.
+The Mozilla address bar showing a URL with the query string title=Main_page&action=raw
+Ans: Regex
+========================================================================
+Explain event delegation.
+Event delegation is when you bind an event listener to a parent. 
+Event delegation allows us to attach a single event listener, to a parent element, that will fire for all children matching a selector, whether those children exist now or are added in the future
+
+======================================================================
+Describe inheritance patterns in JavaScript.
+JS objects each have a “hook” to its parent object, or prototype. Obviously everything the child object defines it has access to, but it also can climb up the prototype tree to access its parent’s (or ancestor’s) methods and properties.
+======================================================================
+Make this work:
+[1,2,3,4,5].duplicator(); 
+Array.prototype.duplicator = function(){
+    return this.concat(this);
+}
+alert([1,2,3,4,5].duplicator());
+===========================================================================
+Why is it called a Ternary statement, what does the word "Ternary" indicate?
+Ternary means 3 parameters
+conditional ? truethy_block : falsey_block
+===========================================================================
+What is the arity of a function?
+The arity property used to return the number of arguments expected by the function
+==============================================================================
+~~3.14
+returns 3
+bit wise NOT operator and two bitwise NOT operator cancels each other
+=============================================================================
