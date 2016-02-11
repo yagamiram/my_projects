@@ -215,3 +215,68 @@ document.write() shouldn’t be used after the page has loaded to change the con
 
 good time to use:;  it is a good choice for third party vendors to use it to add their scripts.
 ===========================================================================
+What's the difference between feature detection, feature inference, and using the UA string
+Feature Detection:
+When you check if a certain feature exists, that’s feature detection.Use feature detection if you're working with a feature that isn’t available across all browsers. 
+Feature Inference:
+When you make an assumption that because one feature is present (or not) another one will also be present
+Chrome implements the Text function. I also know Chrome doesn’t have applyElement like IE does. So I'll write code like...
+
+if(typeof applyElement != 'undefined') {
+    // now I know I'm not in IE, I'll just assume Text is available
+    text = new Text('Oh, how quick that fox was!');
+}
+“UA” stands for user agent, which means the browser
+==================================================================================
+Explain AJAX in as much detail as possible
+
+- Stands for Asynchronous JavaScript and XML
+- Used to send requests and handle responses from the server without disrupting the current display
+- Requires a url to send the request to
+- Requests use the method 'get' by default, but can be changed by changing the type
+- Can send up data
+- Can have success and error callbacks
+AJAX does not allow requesting of data from another domain. 
+======================================================================================
+Explain how JSONP works?
+
+It's used when requesting data from another domain.
+AJAX does not allow requesting of data from another domain. JSONP is a workaround using script tags. You set the script src to be the URL you're hitting and pass in a callback. The callback will handle the data that gets passed back from the JSONP server.
+===================================================================================
+Explain "hoisting".
+
+It's when a named function becomes available in the entire scope even before it is declared. So it is as if the function declaration is hoisted to the top of the scope.
+
+This doesn't work for anonymus fn
+=====================================================================================
+What is FOUC? How do you avoid FOUC?
+
+web pages load with unstyled content, and then it might be a few seconds (or minutes) before you see what may or may not be the page's intended look and feel. In web design, this aberration is called the unintended Flash of Unstyled Content (FOUC).
+Resolve:
+hiding all or part of the web page until all styles and JavaScript are finished 
+=======================================================================================
+Describe event bubbling.
+Event bubbling occurs when a user interacts with a nested element and the event propagates up (“bubbles”) through all of the ancestor elements.
+When the user clicks the button the events starts at the button element and goes to its parents then to the ancestor and stops 
+when the document is reached.
+
+How to stop?
+event.stoppropagation()
+=========================================================================================
+What's the difference between an "attribute" and a "property"?
+JS DOM objects have properties. 
+
+<a href='page2.html' class='link classes' name='linkName' id='linkID'>Hi</a>
+
+$('#linkID').prop('href'); // returns "http://example.com/page2.html"
+$('#linkID').prop('name'); // returns "linkName"
+$('#linkID').prop('id'); // returns "linkID"
+$('#linkID').prop('className'); // returns "link classes"'
+
+all of the properties we set in the HTML are available through prop. 
+
+Attributes are in the HTML itself, rather than in the DOM. It takes only string. 
+And it always points to the default value even the values are updated.
+============================================================================================
+
+
