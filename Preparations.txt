@@ -345,3 +345,14 @@ get(0) returns the first DOM element matched by the selector.
 
 eq(0) returns a jQuery object containing the first DOM element matched by the selector.
 =========================================================================
+What is the difference between $ and $.fn? Or just what is $.fn.
+$.fn is the object containing all $() functions ($ prototype). So if you define a function on $.fn, every jQuery collection created with $() will have access to your function. jQuery plugins are created using this method, for example:
+
+definition:
+
+$.fn.myPlugin = function(){...}
+
+usage:
+
+$(selector).myPlugin();
+
