@@ -329,3 +329,19 @@ The arity property used to return the number of arguments expected by the functi
 returns 3
 bit wise NOT operator and two bitwise NOT operator cancels each other
 =============================================================================
+Explain "chaining".
+Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+=====================================================================
+What does .end() do?
+ .end() cancels the last filtering action and returns a set like it was before the filtering was applied. 
+ nothing but undo.
+==============================================================================
+How, and why, would you namespace a bound event handler?
+But let's say you've attached several listeners to the same event. How do you remove just one of them? Namespacing can help.
+================================================================================
+What is the difference between .get(), [], and .eq()?
+get(0) returns the first DOM element matched by the selector.
+
+eq(0) returns a jQuery object containing the first DOM element matched by the selector.
+=========================================================================
