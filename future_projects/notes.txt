@@ -1,2 +1,13 @@
 Look at his resume and projects. Its interesting on how to use algorithms in real time projects.
 https://www.linkedin.com/in/zhihui-zachary-qiu-295a088a
+
+General need to be a robotics engineer (according to hydroswarm)
+
+1. Must be a US resident [This is not in my hand unless I marry a ABCD girl!]
+2. Signal processing
+3. Networking hardware and software
+4. Computer vision
+5. Data collection and processing
+6. Machine learning
+
+WAIT ! No AI ??? I don't know. It varies according to creating of robots. 
