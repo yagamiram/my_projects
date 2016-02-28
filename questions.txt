@@ -1,0 +1,32 @@
+1.Two string manipulation questions that I had to code on a white board. 
+2.Would you rather fight 100 duck sized horses or 1 horse sized duck?  
+3. Implement a function that checks if parens of an input are balanced
+4. show me how you would design a URL shortener
+5. come up with different ways to do a shuffle algorithm
+6. schema design
+7. SQL questions
+8. Singleton the difference between a class and an instance of a class etc. 
+9. Capitalize the first word in each sentence
+10. write a function that takes in N and prints dot tree of N height. 
+11. function that prints out prime numbers 
+12. Master-Master Db Setup in prod
+13. Unit testing
+14. some high level application scalability and agile software process questions
+15. OOPS concepts
+16. Javascript programming.
+17. Design patterns
+18. Algorithm and design question
+
+Misc:
+Basic CS questions, OOPS concepts, basic design patterns   , and past work experience
+SQL query statements and JavaScript programmings, 
+questions mostly on architecture, design, patterns and scenarios. 
+technical coding exercise session followed by a general skills review session with extra stress on unit testing.
+
+
+algorithm and design questions. Then I met with a senior manager, whom asked me more algorithm questions, database questions, and questions related to object oriented programming .
+, go over the design of a recent project, , , some SQL and schema design, intermediate tables, joins, 
+??  
+ 
+witter schema design and SQL queries  
+
