@@ -16,6 +16,7 @@
 16. Javascript programming.
 17. Design patterns
 18. Algorithm and design question
+19. Machine Learning
 
 Misc:
 Basic CS questions, OOPS concepts, basic design patterns   , and past work experience
