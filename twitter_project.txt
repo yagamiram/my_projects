@@ -1,2 +1,14 @@
 http://www.cs.uccs.edu/~jkalita/papers/2010/SharifiBeauxNWDAA2010.pdf
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.338.1792&rep=rep1&type=pdf
+
+Apache Storm Intro:
+http://why-not-learn-something.blogspot.in/2015/12/apache-storm-introduction.html
+Apache Storm Architecture:
+http://why-not-learn-something.blogspot.com/2016/01/apache-storm-architecture-overview.html
+
+Apache Spark:
+Interview Question:  https://intellipaat.com/interview-question/apache-spark-interview-questions/
+RDD in Apache Spark:
+http://www.thecloudavenue.com/2014/01/resilient-distributed-datasets-rdd.html
+Apache Spark Workshop:
+http://stanford.edu/~rezab/sparkclass/slides/itas_workshop.pdf
