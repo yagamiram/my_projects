@@ -13,3 +13,9 @@ http://www.thecloudavenue.com/2014/01/resilient-distributed-datasets-rdd.html
 http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm
 Apache Spark Workshop:
 http://stanford.edu/~rezab/sparkclass/slides/itas_workshop.pdf
+
+Stream Framework:
+https://github.com/tschellenbach/Stream-Framework
+Django FB:
+https://github.com/tschellenbach/Django-facebook
+http://peterhudec.github.io/authomatic/examples/django-simple.html
