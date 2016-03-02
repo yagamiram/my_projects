@@ -5,3 +5,9 @@ select name, round(gdp/population, -3) from world where gdp >= 1000000000000
 Note: Round function takes both negative and positive number to round the numerical value. If the positive number is given, it will round of the decimal and if the negative number is given it will round of the numerical value.
 
 Example: value : 66442.3775 to: 66000 when using round(gdp/population, -3)
+
+Question:
+Show the name and the continent - but substitute Eurasia for Europe and Asia; substitute America - for each country in North America or South America or Caribbean. Show countries beginning with A or B
+SQL : select name, CASE WHEN continent IN ('Europe', 'Asia') THEN 'Eurasia' WHEN continent IN ('North America', 'South America', 'Caribbean') THEN 'America' else continent END
+from world 
+where name LIKE 'A%' or name LIKE 'B%'
