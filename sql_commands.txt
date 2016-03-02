@@ -12,12 +12,18 @@ SQL : select name, CASE WHEN continent IN ('Europe', 'Asia') THEN 'Eurasia' WHEN
 from world 
 where name LIKE 'A%' or name LIKE 'B%'
 
+The ORDER BY keyword is used to sort the result-set.
 Question:
 List the name and continent of countries in the continents containing either Argentina or Australia. Order by name of the country.
 
 select name, continent from world where continent IN (select continent from world where name in ('Argentina', 'Australia') )order by name
 
+
+Aggregate functions often need an added GROUP BY statement.
 Question:
 For each continent show the continent and number of countries.
-
 Query: select continent , count(name) from world  group by continent
+
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+Q: List the continents that have a total population of at least 100 million.
+A: select continent from world where sum(population) >= 100000000 group by continent 
