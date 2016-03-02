@@ -1,0 +1,59 @@
+State space = Set of states. [Lots of states]
+Given Initial state and goal state. 
+
+1. An optimal search algorithm like A* search can be used.  Because of its heuristic function, no other algorithm is guaranteed to expand nodes more than A*. 
+
+But the drawback is, coming up with an efficient heuristic function which is very difficult one and we don't have any edge weights while we do state transition from one state to another state. 
+ 
+
+2. Using Backward search instead of forward search. It looks like, a lifted backward search would decreases the number of branching factors in each level during the state transition but the there is no big difference in the time complexity,
+
+Plan Space Search:
+
+Instead of searching through a graph of nodes to reach the destination, If we refine the nodes of the graph so that if each nodes holds more information/properties, then we can reach the goal state in less cost than usual search space algorithm.
+
+By refining the nodes to add more content to is called as plane refinement operations. 
+
+By this, during the search, we can watch even actions that are in parallel.
+
+State - space seach:
+
+Action 1 ----> Action 2 ------> Action 3
+
+Plan space search:
+
+Action1 ------> Action 2 ------> Action 4
+ 
+        |                                                 |
+        |                                                 |
+        |______> Action 4 _______>|
+
+So the goal of plan space is not a pre-determined goal. It is a set of partial order plans.
+
+One big advantage of plan space search is, while it does plan refinement operations ,it keeps track of all the operations in table called variable binding table. This leads to variable binding table for every actions and we can do parallel search comfortably. 
+
+Plan space search has:
+1. Initial State
+2. Goal state 
+3. No Actions to do state transition.
+4. No effects in both initial and goal state.
+
+Using plan refinement operations the successor is generated to move from one state to another state.
+
+Pros:
+1. No pre-computed state space. [No of states in state space = No of actions * predicates [cross product]]
+2. No usage of memory to store all the states beforehand.
+3. Reaching the goal state in less cost.
+
+Cons:
+1. But one big disadvantage is maintaining the consistency of the variable bindings.
+2. Writing efficient plan refinement operators to generate the successor.
+3. More threats and flaws while generating and searching in parallel. This can be avoided by ordering constraint.
+
+Resolving Threats and Flaws: 
+1. PSP algorithm. [Plan space planning]
+2. UCPOP planner - It first deals with open goals, solves it, then goes for threats.
+
+During the interview, you had mentioned that there wont be a pre-defined goals all the time in reality. In those scenarios, state space and plan space wont work out. 
+
+A better approach is STN - Simple task network planning [Planning to perform tasks rather than achieving goals]
