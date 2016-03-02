@@ -5,7 +5,8 @@ Track maven does the action of defining, gathering, analyzing, and distributing 
 customers, competitors, and any aspect of the environment needed to support executives and managers making strategic 
 decisions for an organization.
 
-If I have to make a comparison between two products I would go for short analysis and will make power point and the PPT would expire even before I presented to the board of memebers. And TRack maven tracks this problem and provides a solution. 
+If I have to make a comparison between two products I would go for short analysis and will make power point and the PPT would expire even
+before I presented to the board of memebers. Abnd TRack maven tracks this problem and provides a solution. 
 
 It make cool interfaces with customized alerts to display whats going on in the other end of the a company from which one can 
 make strategic decision to improve their product much. And moreover, the social media is increasing all the days and gathering 
@@ -23,6 +24,34 @@ how do u track what the audiences are interested in ? what kind of measurements 
 how do you track the emails of the competitors, I was like wondering how made this possible >
 Proof : you have mentioned in the linkedin and tech-crunch that you provide a digital data which is  understandable and actionable by tracking your competitors' Paid Advertising, SEO, News + Press Mentions, Email, Content Marketing, Social Media and Web Traffic, all in one analytics platform.
 
+How do you parse the content and understands the negativity or positivity of the content. I mean befoer you are presenting the 
+analysis to the competitors you would be classifying the information as good feedback about the company 
+or bad feedback about the company etc. How do u classify it ? How do build a parse tree here ? Do u use any NLP
+tools for this ?
 
+Position I'm interviewd for : Software Engineer
+ How I'm qualified for this?
+ 
+ High proficiency in python. Contributed to opensource projects. they are reviewboard and trac email system.
+ Learnt Flask and Django
+ Enthusiastic in Javascript. Especially in Electron, d3/three, react.js
+ Cloud computing - worked on scalability
+ Worked on data streaming projects like twitter summarization
+ Robotics/NLP/ML/CV/AI
 
+How can I build an intelligent agent?
+An agent is a thing (e.g. program, or system) that can be viewed as perceiving
+its environment and acting upon that environment through effectors.
+I can build an ideal intelligent agent that maximized its performance measure based on its
+perceptions and built-in knowledge.
+We want to build intelligent agents capable of reacting to the environment on
+their own. 
+Example: an intelligent agen that can adjust the time zones.
+I can create a goal based learning agent that can take steps gardually and learns from its mistakes and
+reaches the goal soon.
+
+ I have built two intelligent agent : AI planning. Automatically sending email based on the response ticketing system
+ environment.
+
+Django 
 
