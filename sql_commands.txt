@@ -27,3 +27,12 @@ Query: select continent , count(name) from world  group by continent
 The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
 Q: List the continents that have a total population of at least 100 million.
 A: select continent from world where sum(population) >= 100000000 group by continent 
+
+JOIN
+Link: http://sqlzoo.net/wiki/The_JOIN_operation
+Q: Modify it to show the player, teamid, stadium and mdate and for every German goal.
+A: SELECT player,teamid, stadium, mdate
+  FROM game JOIN goal ON (id=matchid) and teamid =  'GER'
+A: SELECT player,b.teamid, stadium, mdate
+  FROM game a, goal b where a.id = b.matchid and b.teamid =  'GER'
+  
