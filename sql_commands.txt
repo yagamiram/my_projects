@@ -11,3 +11,8 @@ Show the name and the continent - but substitute Eurasia for Europe and Asia; su
 SQL : select name, CASE WHEN continent IN ('Europe', 'Asia') THEN 'Eurasia' WHEN continent IN ('North America', 'South America', 'Caribbean') THEN 'America' else continent END
 from world 
 where name LIKE 'A%' or name LIKE 'B%'
+
+Question:
+List the name and continent of countries in the continents containing either Argentina or Australia. Order by name of the country.
+
+select name, continent from world where continent IN (select continent from world where name in ('Argentina', 'Australia') )order by name
