@@ -1,0 +1,10 @@
+TSP [Tavelling Salesman Problem]:
+
+The problem is visit all the nodes in the graph and reach the start node again but the same edge should not be visited more than once.
+
+Christofides algorithms is a polynomial time deterministic algorithm to find the solutions for TSP.
+
+The steps are as follows:
+1. From the given complete graph, a minimum spanning tree is found. [Set of least number of edges to connect all nodes in the graph]
+2. Do a weighted matching on the nodes who's degree is odd. Mathcing is a concept of reducing the number of edges in the graph so that only few edges are needed to connect the nodes in the graph. [The graph could be disconnected while matching is done]
+3. Now by combining the minimum spanning tree,matching and floyd warshall algorithm the solution to TSP will be found.
