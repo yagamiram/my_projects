@@ -5,8 +5,7 @@ Track maven does the action of defining, gathering, analyzing, and distributing 
 customers, competitors, and any aspect of the environment needed to support executives and managers making strategic 
 decisions for an organization.
 
-If I have to make a comparison between two products I would go for short analysis and will make power point and the PPT would expire even
-before I presented to the board of memebers. Abnd TRack maven tracks this problem and provides a solution. 
+If I have to make a comparison between two products I would go for short analysis and will make power point and the PPT would expire even before I presented to the board of memebers. And TRack maven tracks this problem and provides a solution. 
 
 It make cool interfaces with customized alerts to display whats going on in the other end of the a company from which one can 
 make strategic decision to improve their product much. And moreover, the social media is increasing all the days and gathering 
