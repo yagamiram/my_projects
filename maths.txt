@@ -1,3 +1,4 @@
 1 million = 6 digits [1000000]
 1 billion = 9 digits [1000000000]
 250 million = 250000000 [7 0's]
+1 trillion = 12 zeros [1000000000000]
