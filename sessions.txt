@@ -1,0 +1,6 @@
+"Session" is the term used to refer to a user's time browsing a web site. It's meant to represent the time between their first arrival at a page in the site until the time they stop using the site. In practice, it's impossible to know when the user is done with the site. In most servers there's a timeout that automatically ends a session unless another page is requested by the same user.
+
+Now more specifically for a web session, the session is a data structure that an application uses to store temporary data that is useful only during the time a user is interacting with the application, it is also specific to the user.
+
+An excellent information presented on web sessions:
+http://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/
