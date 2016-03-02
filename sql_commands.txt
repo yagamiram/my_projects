@@ -1,0 +1,7 @@
+Link: http://sqlzoo.net/wiki/SQLZOO:SELECT_from_WORLD_Tutorial
+Show per-capita GDP for the trillion dollar countries to the nearest $1000.
+select name, round(gdp/population, -3) from world where gdp >= 1000000000000
+
+Note: Round function takes both negative and positive number to round the numerical value. If the positive number is given, it will round of the decimal and if the negative number is given it will round of the numerical value.
+
+Example: value : 66442.3775 to: 66000 when using round(gdp/population, -3)
