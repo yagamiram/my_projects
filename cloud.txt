@@ -22,5 +22,99 @@ disk block, RAM, firewalls, load balancers, virtual local area
 network etc
 Ezample: Amazon EC2, windows azure.
 
+Windows Azure Architecture: https://didattica.polito.it/Seminari_ICT/pdf/tamburrelli.pdf
+Business  Consumer
+   both can use
+ MICROSOFT AZURE
+
+Key components of microsoft azure:
+1. Fabric  <- Fabric controller
+2. Compute
+3. Storage
+ 
+Fabric controller : 
+It communicates with every server within the Fabric.
+It manages windows azure
+It monitors every application
+It decides where new appln should run & optimized Hardware utilization
+It automates load balancing and computes resource scaling
+It does load balancing, checkpoint and recovery
+It interacts with each fabric agent. Every VM has a fabric agent. 
+Every fabric agent has a worker wole and web roles.
+
+Compute: Goal of compute is Scalability
+It provides application scalability.
+Developers build combination of web and worker roles
+
+Storage: Goal : Scalability and durable storage
+Database scaling.
+Allows customers to scale the large amount of data.
+It has blobs, tables and queues.
+Extra advantages:
+1. Storege encryption
+2. Security etx
+
+What is an Azure Cloud Service Role?
+In Azure, a Cloud Service Role is a collection of managed, load-balanced, Platform-as-a-Service virtual machines that work together to perform common tasks. Cloud Service Roles are managed by Azure fabric controller and provide the ultimate combination of scalability, control, and customization
+
+What is a Web Role?
+Web Rols is a Cloud Service role in Azure that is configured and customized to run web applications developed on programming languages / technologies that are supported by Internet Information Services (IIS), such as ASP.NET, PHP, Windows Communication Foundation and Fast CGI.
+
+ 
+
+What is a Worker Role?
+Worker Role is any role in Azure that runs applications and services level tasks, which generally do not require IIS. In Worker Roles, IIS is not installed by default. They are mainly used to perform supporting background processes along with Web Roles and do tasks such as automatically compressing uploaded images, run scripts when something changes in database, get new messages from queue and process and more.
+
+ 
+
+Differences between Web and Worker Roles
+The main difference between the two is that a Web Role support and runs Internet Information Services (IIS), while an instance of a Worker Role does not. As being deployed and delivered through Azure Service Platform, both can be managed in the same way and can be deployed on a similar Azure Instance. In most scenarios, Web Role and Worker Role instance work together and are often used by an application simultaneously.
+
+For example, a web role instance might accept requests from users, then pass them to a worker role instance for processing.
+
+Access control:
+Active Directory
+● Authenticate and authorize users to gain access to your web applications and services
+while allowing the features of authentication and authorization to be factored out of
+your code.
+
+Role based access control:
+Role-based access control (RBAC) is a method of regulating access to computer or network resources based on the roles of individual users within an enterprise. In this context, access is the ability of an individual user to perform a specific task, such as view, create, or modify a file. Roles are defined according to job competency, authority, and responsibility within the enterprise.
+Permission associated with roles and users assigned to appropriate roles
+
+RBAC (Role based access control) is based on defining a list of business roles, and adding each user in the system to one or more roles. Permissions and privileges are then granted to each role, and users receive them via their membership in the role (pretty much equivalent to a group). Applications will typically test the user for membership in a specific role, and grant or deny access based on that.
+Discretionary Access Control (DAC) allows a user or administrator to define an Access Control List (ACL) on a specific resource (e.g. file, registry key, database table, OS object, etc), this List will contain entries (ACE) that define each user that has access to the resource, and what her privileges are for that resouce.
+
+To sum up the differences:
+
+DAC is based on personal permissions, RBAC on "group"-level permissions
+DAC is set by the data owner, RBAC by the system owner/s (usually the developer defines the access given to each role, and the operational admin puts users into roles)
+DAC definitions are typically attached to the data/resource, whereas RBAC is usually defined in two places: in code/configuration/metadata (the roles access), and on the user object (or table - the roles each user has).
+On the other hand, RBAC roles are centrally administered (who is associated with which roles), whereas DAC is administered "on the resource" (i.e. you administer each resource individually).
+The definition of permissions per role is typically static in RBAC, and users are only granted roles; in DAC the permissions per resource are often changed at runtime.
+DAC should be seen as enumerating "who has access to my data", and RBAC defines "what can this user do"
+
+RBAC0 was defined as the base model, defined through users, roles, and permissions. RBAC1 includes RBAC0 but incorporates hierarchies as a partial order relationship between roles.
+
+MAC - Military rule
+
+Multi-Tenancy
+● One instance of an application, running on a remote server, serves many client
+organizations (also known as tenants)
+● Types:
+1. Hardware and Resource multi-tenancy
+2. Data multi-tenancy
+3. Application multi-tenancy
+Strategies of Multi-Tenancy
+● Physical Separation: Ensures that each tenant gets his own dedicated hardware resources.
+● Virtualization: Aims at creating application hosting environments that provide logical
+boundaries between each tenant.
+● Allows the application to automatically adjust its behavior differently for different tenants
+at runtime
+
+
+
+
+
 
 
