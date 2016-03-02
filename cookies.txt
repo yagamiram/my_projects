@@ -1,0 +1,57 @@
+Cookies are small text files that make a big difference to our browsing experience. They store some website-specific info, remembering your preferences. It's not only remembering you were logged in. For example, cookies help you shop online, remembering what you put in the shopping basket. Or they make sure you see a website in the chosen language next time you visit it. 
+
+So, what are cookies?
+
+Cookies, also called web cookies, internet cookies, browser cookies or computer cookies, are tiny text files with some website-specific info saved to your computer. If you revisit the same site, cookies help it to remember some of your preferences.
+
+Why are websites setting cookies? What info do they store?
+
+Here are examples of some common scenarios:
+
+When you fill a form on a website, you don’t have to enter the same details again with the next visit, thanks to a cookie, which stores them on your computer.
+When you shop online, cookies store info as you put items in the shopping cart, so that you can pay for them all at once.
+If you chose a specific language in which you want to view a website,  a cookie can remember this preference for subsequent sessions.
+Common types of cookies
+
+There are quite a few types of cookies. We won’t go into too much detail about each of them, but these are two of the most common groups:
+
+Session cookies are temporary files that are erased from your computer when you close your browser window.
+Persistent cookies (also called permanent) stay on your computer until a fixed expiration date – for example, for a year.
+Are cookies safe? 
+
+The idea that cookies are potentially malware is a common misconception. The truth is that cookies can’t install a virus to your computer, because they’re just text files.
+
+What about privacy? Well, a cookie can’t really “steal” your info – it just stores what you choose to let a website know about you. However, it’s quite common for some online advertisers to use cookies for tracking your browsing behavior and then show you some tailored ads. Often it works through third-party cookies – i.e., set by a website different from what you’re viewing.
+
+Setting cookies with Python
+
+Python provides a library for handling cookies. The example below shows how to create a cookie, assign a value to it, and assign a value to the 'expires' attribute:
+
+
+#!/usr/bin/env python
+
+import Cookie
+
+# create the cookie
+c=Cookie.SimpleCookie()
+# assign a value
+c['raspberrypi']='Hello world'
+# set the xpires time
+c['raspberrypi']['expires']=1*1*3*60*60
+
+# print the header, starting with the cookie
+print c
+print "Content-type: text/html\n"
+
+# empty lines so that the browser knows that the header is over
+print ""
+print ""
+
+# now we can send the page content
+print """
+<html>
+    <body>
+        <h1>The cookie has been set</h1>
+    </body>
+</html>
+"""
