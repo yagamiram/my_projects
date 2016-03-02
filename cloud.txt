@@ -1,0 +1,26 @@
+What is cloud computing?
+It is a internet based services delivery model where services are hosted over the internet by service provider. A service provider
+will have a service delivery model. 
+
+A service providers haver infrastructure such as servers, hardware and software.
+To put it simply, "pay what you use"
+
+Cloud computing service delivery models:
+1. software as a service - You are provided with access to application
+softwares. You don't have to worry about the installation, setup and
+running the appln. The service provioder will do that for u.
+Example: Google docs, Google apps, excel , MS office 365
+
+2. Platform as a service: As the name suggest, it provides the computing
+platforms which typically includes operating system, excuting environement
+database, web server etc
+Example; Windows Azure, GAE, AWS Elastic etc
+
+3. Infrastructure as a service: It provides the computing infrastrucure,
+physical or virtual machines and other resources like virutal machine
+disk block, RAM, firewalls, load balancers, virtual local area
+network etc
+Ezample: Amazon EC2, windows azure.
+
+
+
