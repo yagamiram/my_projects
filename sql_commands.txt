@@ -36,3 +36,5 @@ A: SELECT player,teamid, stadium, mdate
 A: SELECT player,b.teamid, stadium, mdate
   FROM game a, goal b where a.id = b.matchid and b.teamid =  'GER'
   
+SQL joins explained : http://www.sql-join.com/
+Equi join = inner join
