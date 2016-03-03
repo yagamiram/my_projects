@@ -1,0 +1,37 @@
+Difference between public, protected, private:
+
+Public members of a class A are accessible for all and everyone.
+
+Protected members of a class A are not accessible outside of A's code, but is accessible from the code of any class derived from A.
+
+Private members of a class A are not accessible outside of A's code, or from the code of any class derived from A.
+
+So, in the end, choosing between protected or private is answering the following questions: How much trust are you willing to put into the programmer of the derived class?
+
+class Base {
+
+private: 
+  int MyPrivateInt;
+protected: 
+  int MyProtectedInt;
+public:
+  int MyPublicInt;
+}
+
+class Derived : Base
+{
+public:
+  int foo1()  { return MyPrivateInt;} // Won't compile!
+  int foo2()  { return MyProtectedInt;} // OK  
+  int foo3()  { return MyPublicInt;} // OK
+};
+
+class Unrelated 
+{
+private:
+  Base B;
+public:
+  int foo1()  { return B.MyPrivateInt;} // Won't compile!
+  int foo2()  { return B.MyProtectedInt;} // Won't compile
+  int foo3()  { return B.MyPublicInt;} // OK
+};
