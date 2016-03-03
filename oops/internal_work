@@ -1,0 +1,7 @@
+By default, if not implemented by the user, the compiler add some member functions to the class. Those are called the big four :
+
+default constructor
+copy constructor
+copy operator (assignment)
+destructor
+Depending on the types of the members and which member function listed you provide yourself, those will not all be generated.
