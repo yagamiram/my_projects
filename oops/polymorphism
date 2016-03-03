@@ -1,0 +1,49 @@
+polymorphism means "having multiple forms".
+Two objects respond to the same message with different behaviors; the sender doesn't have to care.
+
+class Animal:
+    def __init__(self, name):    # Constructor of the class
+        self.name = name
+    def talk(self):              # Abstract method, defined by convention only
+        raise NotImplementedError("Subclass must implement abstract method")
+
+class Cat(Animal):
+    def talk(self):
+        return 'Meow!'
+
+class Dog(Animal):
+    def talk(self):
+        return 'Woof! Woof!'
+
+animals = [Cat('Missy'),
+           Cat('Mr. Mistoffelees'),
+           Dog('Lassie')]
+
+for animal in animals:
+    print animal.name + ': ' + animal.talk()
+
+# prints the following:
+#
+# Missy: Meow!
+# Mr. Mistoffelees: Meow!
+# Lassie: Woof! Woof!
+Notice the following: all animals "talk", but they talk differently. The "talk" behaviour is thus polymorphic in the sense that it is realized differently depending on the animal. So, the abstract "animal" concept does not actually "talk", but specific animals (like dogs and cats) have a concrete implementation of the action "talk".
+
+Similarly, the "add" operation is defined in many mathematical entities, but in particular cases you "add" according to specific rules: 1+1 = 2, but (1+2i)+(2-9i)=(3-7i).
+
+Polymorphic behaviour allows you to specify common methods in an "abstract" level, and implement them in particular instances.
+
+For your example:
+
+class Person(object):
+    def pay_bill():
+        raise NotImplementedError
+
+class Millionare(Person):
+    def pay_bill():
+        print "Here you go! Keep the change!"
+
+class GradStudent(Person):
+    def pay_bill():
+        print "Can I owe you ten bucks or do the dishes?"
+You see, millionares and grad students are both persons. But when it comes to paying a bill, their specific "pay the bill" action is different.
