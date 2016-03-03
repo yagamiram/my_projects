@@ -1,0 +1,17 @@
+Abstraction is hiding the implementation details by providing a layer over the basic functionality.It is an act of representing only the essential things without including background details. (e.g. Interface)
+
+Information Hiding is hiding the data which is being affected by that implementation. Use of private and public comes under this. For example, hiding the variables of the classes.
+
+Encapsulation is just grouping all similar data and functions into a group e.g Class in programming; Packet in networking.
+
+Abstraction - It is the process of identifying the essential characteristics of an object without including the irrelevant and tedious details.
+
+Encapsulation - It is the process of enclosing data and functions manipulating this data into a single unit.
+
+Abstraction and Encapsulation are related but complementary concepts.
+
+Abstraction is the process. Encapsulation is the mechanism by which Abstraction is implemented.
+
+Abstraction focuses on the observable behavior of an object. Encapsulation focuses upon the implementation that give rise to this behavior.
+
+Information Hiding - It is the process of hiding the implementation details of an object. It is a result of Encapsulation.
