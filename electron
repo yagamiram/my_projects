@@ -1,6 +1,36 @@
 Electron - It is created by Github. It is used for creating desktop applications. It can make sure the application can be run 
-in any operating system [cross-platform]
+in any operating system [cross-platform].
 
+It uses Node.js and Chrome to create the desktop application. 
+
+How it helps to build a cross-platform desktop applications?
+It will make sure that yout application must be run only by node.js and chrome engine. So the application that you create will 
+bundle the node.js and chrome engine togther. Now this applicaton [your code + node.js + chrome engine] will be given to any customer
+who uses any operating system and the application will run on their system irrespective how the system is configured.
+
+Source: Watch the video: https://www.youtube.com/watch?v=Xs3Oc4weZbw
+
+Pros and Cons of Electron:
+
+Pros:
+HTML + CSS + JS
+Node.js + chrome engine
+No deplpoyment dependencies [this explained above]
+
+Cons:
+HTML + CSS + JS [Definitely it's a disadvantage for me. I dont have any serious knowledge in HTML or CSS or JS when I'm writing this]
+Seriously JS
+Native module are in C/C++
+
+History for Electron:
+Created by Github for  Atom [Atom is an editor. It is an application of node.js]
+
+Important features of Eletron:
+1. Rapid development
+2. Themes [I don't know ! Are they talking about the background themes]
+3. Shared code/ UI [you can easily cut-copy-paste some code from your earlier application to the new application]
+4. Deplyment + "silent" updates [Deployment is easier. YEs! so only it is called as cross-platform development tool]
+5. Native UX [IDK]
 How to install:
 
 1. Dependecies: node.js or io.js
