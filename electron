@@ -19,3 +19,14 @@ npm init
     author: Yagamiram ElricTK
     license: (BSD-2-Clause) 
 npm i electron-prebuilt --save-dev [this didnt work for me for some reason in Ubuntu]
+Error I got:
+    > electron-prebuilt@0.36.10 postinstall /home/yagamiram/node_modules/electron-prebuilt
+    > node install.js
+    
+    sh: 1: node: not found
+    npm WARN This failure might be due to the use of legacy binary "node"
+    npm WARN For further explanations, please read
+    /usr/share/doc/nodejs/README.Debian
+     
+    npm ERR! weird error 127
+    npm ERR! not ok code 0
