@@ -94,3 +94,12 @@ Now go to the text editor and edit the package.json file:
     "electron-prebuilt": "~0.36.10"
   }
 }
+
+What does it mean ? start : "electron ." ?
+I'm referring the electron binary [which is pre-built while u installing the electron zip/package]
+By this electron binary, your desktop app will run
+The "." next to the electron specified the path of the binary I think
+The binary resides in the same directory of the package.json (hidden directory called bin/electron)
+
+If you have to refer some electron binary in some other directory then
+start : "electron /path/to/location/electron"
