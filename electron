@@ -1,0 +1,21 @@
+Electron - It is created by Github. It is used for creating desktop applications. It can make sure the application can be run 
+in any operating system [cross-platform]
+
+How to install:
+
+1. Dependecies: node.js or io.js
+
+Commands:
+sudo -s
+sudo apt-get install npm
+npm init
+    name: (yagamiram) 
+    version: (0.0.0) 
+    description: For Jibo robotics project
+    entry point: (index.js) 
+    test command: 
+    git repository: https://github.com/yagamiram
+    keywords: electron, coffeescript, whitestorm, react, io, three
+    author: Yagamiram ElricTK
+    license: (BSD-2-Clause) 
+npm i electron-prebuilt --save-dev
