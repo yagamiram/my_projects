@@ -60,3 +60,9 @@ Error I got:
      
     npm ERR! weird error 127
     npm ERR! not ok code 0
+How to avoid this error?
+Source : https://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu/21171188#21171188
+
+sudo apt-get install nodejs-legacy
+
+That's it! [Electron is installed]
