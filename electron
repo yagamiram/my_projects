@@ -18,4 +18,4 @@ npm init
     keywords: electron, coffeescript, whitestorm, react, io, three
     author: Yagamiram ElricTK
     license: (BSD-2-Clause) 
-npm i electron-prebuilt --save-dev
+npm i electron-prebuilt --save-dev [this didnt work for me for some reason in Ubuntu]
