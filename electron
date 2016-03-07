@@ -112,4 +112,38 @@ So create a file in the same directory called index.js
 It should include the code given in this link: [The code is properly explained.]
 http://electron.atom.io/docs/latest/tutorial/quick-start/
 
+After this you have set the base for yout desktop appliation so run your application either by the below commands:
+1. ./node_modules/bin/electron .
+2. electron .
+3. npm start
+
+This will display the app for you.
+
+NOTE : TO KNOW what going behing read the link : http://electron.atom.io/docs/latest/tutorial/quick-start/ as many times as possible.
+
+Now if you want to display a webpage in your app, create a html page and load from the index.js. Because, index.js is the main process 
+and all the web pages (may be not all the web pages) should be loaded only from the index.js
+
+Command:
+mainWindow.loadURL('file://' + __dirname + '/index.html');
+
+Now create the web page called index.html in the same folder and include the below syntax:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+  </body>
+</html>
+
+
+Now as usual run it by any of the three commands and verify whether you app is running or not.
+
+This is the basics of Electron.
 
