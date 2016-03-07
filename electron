@@ -31,6 +31,14 @@ Important features of Eletron:
 3. Shared code/ UI [you can easily cut-copy-paste some code from your earlier application to the new application]
 4. Deplyment + "silent" updates [Deployment is easier. YEs! so only it is called as cross-platform development tool]
 5. Native UX [IDK]
+
+Generally, an Electron app is structured like this:
+
+your-app/
+├── package.json
+├── main.js
+└── index.html
+
 How to install:
 
 1. Dependecies: node.js or io.js
