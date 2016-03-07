@@ -103,3 +103,13 @@ The binary resides in the same directory of the package.json (hidden directory c
 
 If you have to refer some electron binary in some other directory then
 start : "electron /path/to/location/electron"
+
+After this we have to create the js file that runs this electron desktop application.
+The js file is already specified in the package.json [ "main": "index.js",]
+
+So create a file in the same directory called index.js
+
+It should include the code given in this link: [The code is properly explained.]
+http://electron.atom.io/docs/latest/tutorial/quick-start/
+
+
