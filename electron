@@ -76,3 +76,21 @@ sudo apt-get install nodejs-legacy
 That's it! [Electron is installed]
 
 Now go to the text editor and edit the package.json file:
+{
+  "name": "electron_apps",
+  "version": "0.0.0",
+  "description": "To create desktop apps on Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."  //This is the only change you have to do. Add this line.
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yagamiram"
+  },
+  "author": "Yagamiram Elric TK",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "electron-prebuilt": "~0.36.10"
+  }
+}
