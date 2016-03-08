@@ -1,0 +1,23 @@
+This text file is about how to install electron in windows
+1. Install node.js link : https://nodejs.org/en/download/
+2. Now open the command prompt and check if node.js and npm are installed correctly. You don't have to worry about installing npm 
+I think. I'm assuming pnpm will be installed with node.js installer.
+3. go to command prompt. CTRL + R . Type "cmd" and press enter. 
+4. Type the below commands and check if you are not getting any error
+   node -v
+   npm -v
+5. Now initialize the npm using the command "npm init" in command prompt and just give enter for every option
+6. Now install the electron : npm i electron-prebuilt --save-dev
+7. Now download the zip file from github [https://github.com/hokein/electron-sample-apps], extract
+   and copy it to the same directory where u are running the commands.
+8. Now u have a set of electron sample projects. Run each project like this:
+   [Run the commarnd from the directory where it's child directory is node_modules.
+    usually the current directory where u are running the commands is the parent 
+    directory to the node_modules child directory]
+    node_modules\.bin\electron electron-sample-apps-master\webgl
+    Format:
+    node_modules\.bin\electron project_dir\project_sub_dir
+    
+    
+  
+    
