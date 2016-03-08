@@ -20,4 +20,11 @@ I think. I'm assuming pnpm will be installed with node.js installer.
     
     
   
-    
+Cumulative of all commands:
+1. Intall node.js
+In cmd prompt:
+1. node -v
+2. npm -v
+3. npm init
+4. npm i electron-prebuilt --save-dev
+5. node_modules\.bin\electron project_dir
