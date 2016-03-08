@@ -1,0 +1,21 @@
+What is Three.js?
+A Js lib which ease the work of creating 3D in web page.
+
+How it works?
+Render Loop:
+The beating heart of most graphics libraries is something called the render loop. 
+You’re probably familiar with the concept that most games try to run at 60 frames per second; 
+this means that we’re going through the render loop to redraw the scene about 60 times each second.
+
+Camera:
+The point of view from which the user sees what’s being drawn by the render loop is called the camera.
+
+Scene:
+The view that the camera shows is called the scene. 
+The scene consists of all of the objects being drawn as well as things that affect how those objects are drawn
+
+Renderer:
+The renderer is what takes the 3D scene we’ve described along with the camera and actually 
+makes a 2D image to place on our screen out of it. It ties everything together.
+
+Link: http://zeptonaut.com/categories/2014/11/04/threejs-intro.html
