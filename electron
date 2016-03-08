@@ -41,12 +41,25 @@ your-app/
 
 How to install:
 
+Steps:
+sudo apt-get install npm
+sudo npm init
+sudo apt-get install nodejs-legacy
+sudo npm i electron-prebuilt --save-dev
+Change package.json
+Create index.js
+Create index.html
+./node_modules/.bin/electron .
+electron .
+npm start
+
+Deatiled Explanation:
 1. Dependecies: node.js or io.js
 
 Commands:
-sudo -s
+
 sudo apt-get install npm
-npm init
+sudo npm init
     name: (yagamiram) 
     version: (0.0.0) 
     description: For Jibo robotics project
@@ -56,7 +69,7 @@ npm init
     keywords: electron, coffeescript, whitestorm, react, io, three
     author: Yagamiram ElricTK
     license: (BSD-2-Clause) 
-npm i electron-prebuilt --save-dev [this didnt work for me for some reason in Ubuntu]
+sudo npm i electron-prebuilt --save-dev [this didnt work for me for some reason in Ubuntu]
 Error I got:
     > electron-prebuilt@0.36.10 postinstall /home/yagamiram/node_modules/electron-prebuilt
     > node install.js
@@ -113,7 +126,7 @@ It should include the code given in this link: [The code is properly explained.]
 http://electron.atom.io/docs/latest/tutorial/quick-start/
 
 After this you have set the base for yout desktop appliation so run your application either by the below commands:
-1. ./node_modules/bin/electron .
+1. ./node_modules/.bin/electron .
 2. electron .
 3. npm start
 
