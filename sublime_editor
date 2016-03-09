@@ -1,0 +1,8 @@
+1. Install the sublime Text 2 
+2. Install Package control manager
+   How ?
+  1 . ctrl+` this will open a small field below the editor
+  2. Copy the python code from https://packagecontrol.io/installation#st2 link and paste it
+  3. Close and open few times. Atleast 3 times. The package control manager will installed successfullly
+3. Ctrl + shift + P and type "Install Package"
+4. This will come with a new field. Type Coffeescript. That's it! 
