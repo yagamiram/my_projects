@@ -71,3 +71,42 @@ output: 7
 
 
 Wherever we go, you can see Dictionary kind of data types. I don't know why !! 
+Here python - dictionary kind of key , value representation are done for app's behaviour using controller.
+
+Example;
+var info = {
+name: 'Yagamiram ElricTK',
+Age: 'Immortal',
+Description: 'He is the mix of Light Yagami and Alphonso Elric. So he is student with a Death note book and also a full metal alchemist'
+}
+
+This key value stored in the JS object has to to accessed by someway.
+
+Below is the way :
+1. Create a closure. Format is: (funtion () { })();
+2. Creata a module and call it as app.
+3. Create a controller that uses the behaviour/info/key,value of the app.
+3. Inside the controller assign the behviour of the app as a property.
+
+(function () {
+var app = angular.module('Person', []);
+app.controller('PersonController', funtion () {
+  this.property = info;
+});
+var info={
+name: 'Y E TK',
+Age: :"I",
+Description: "..."
+}
+})();
+
+That's it!
+
+Now as usual call this inside a div block in HTML using ng-controller directive.
+
+<div ng-controller="PersonController">
+<p>{{this.property.name}}</p>
+<p>{{this.property.Age}}</p>
+<p>{{this.property.Desc}}</p>
+</div>
+
