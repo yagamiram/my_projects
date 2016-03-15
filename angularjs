@@ -147,3 +147,20 @@ In which HTML tags the directives has to be used?
 2. ng-controller should be used in <body> tag.
 3. ng-show anywhere I think.
 4. ng-repeat anywhere I think.
+
+MY BIGGEST QUESTION:
+1. HOW ANGULAR.JS PARSE ALL THE STRINGS I PASSED EASILY ?? STRING SLICE, CONCATENATION ETC ARE SO TEDIOUS WORK
+2. WHERE AM I SEEING ASYNCHRONOUS WORK MENTIONED HERE ??? *PUZZLED*
+
+Fiters : To ease your work more , filters are used.
+Ex:
+1. convert to upper-case or lower-case
+2. Change the number to current format
+3. change the number to time format
+
+These filters muse be added to the "ng-" things at the end.
+
+Studied a lot on filters, behaviours, how to use the bootstrap with angular and 
+how to use ng-controller in more usable way.
+Can't write the document for it. 
+Look at the code shcool angular.js vidoes.
