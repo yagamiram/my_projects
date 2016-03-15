@@ -110,3 +110,8 @@ Now as usual call this inside a div block in HTML using ng-controller directive.
 <p>{{PersonController.property.Desc}}</p>
 </div>
 
+More on Directives:
+ng-show : This will show only when the boolean value to which it is mapped is set to True.
+ng-repeat: For loop that iterates the array/list
+Format: <div ng-repeat = "each_product in products"> </div>
+
