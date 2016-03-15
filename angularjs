@@ -164,3 +164,6 @@ Studied a lot on filters, behaviours, how to use the bootstrap with angular and
 how to use ng-controller in more usable way.
 Can't write the document for it. 
 Look at the code shcool angular.js vidoes.
+
+Validations:
+It lokos liek Angular has some great client side validations which can be used with directives.
