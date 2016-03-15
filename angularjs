@@ -105,8 +105,8 @@ That's it!
 Now as usual call this inside a div block in HTML using ng-controller directive.
 
 <div ng-controller="PersonController">
-<p>{{this.property.name}}</p>
-<p>{{this.property.Age}}</p>
-<p>{{this.property.Desc}}</p>
+<p>{{PersonController.property.name}}</p>
+<p>{{PersonController.property.Age}}</p>
+<p>{{PersonController.property.Desc}}</p>
 </div>
 
