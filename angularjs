@@ -141,3 +141,9 @@ Example:
     </div>
   </body>
 </html>
+
+In which HTML tags the directives has to be used?
+1. ng-app should be used in <html> tag.
+2. ng-controller should be used in <body> tag.
+3. ng-show anywhere I think.
+4. ng-repeat anywhere I think.
