@@ -115,3 +115,8 @@ ng-show : This will show only when the boolean value to which it is mapped is se
 ng-repeat: For loop that iterates the array/list
 Format: <div ng-repeat = "each_product in products"> </div>
 
+What we have learned so far:
+1. Directives : HTML annotations that trigger JS behaviours
+2. Modules: Where our application components resides
+3. Controllers: Where we add application behaviour
+4. Expressions: How values get displayed within the page.
