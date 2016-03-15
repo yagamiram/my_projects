@@ -1,0 +1,68 @@
+It is a java script framework for interactive HTML.
+
+What needs to be known to study angular?
+HTML, CSS, JS.
+
+And it is easy to test Angular.
+
+When Angular JS has to used?
+1. When you need to create a dynamic website.
+2. When you need to organize your JS
+3. When you need to create a fast responsive website.
+4. Angular plays well with jQuery.
+
+Since Angular is JS you have to know when to call the JS in HTML.
+It is done by DIRECTIVES.
+
+Directive:
+It is a marker on HTML that tells Angular to run or reference JS code.
+
+Example:
+ng-controller is a directive that calls the JS function.
+
+<body ng-controller="StoreController">
+</body>
+
+JS:
+funcion StoreController() {
+alert("hi");
+}
+
+It looks like everything is a module in Angular.
+
+How to create a module in Angular?
+var app = angular.module('store', []);
+This is the format of creating the module in Angular. The "store" is the module name and the [] is the dependencies list.
+
+Another Directive:
+ng-app : It runs the JS function specified to it whenver the document/HTML loads.
+
+Expressions:
+They are dynamic values calculated in the runtime
+Example:
+<p>{{4 + 3}}</p>
+
+This will be returned back as {{4+3}} in HTML page if no angular is included.
+
+what if the angular is included:
+The output will be 7
+
+Example:
+app.js:
+var app;
+app = angular.module("gemStore", []);
+
+index.html:
+<!DOCTYPE html>
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <h1>{{4+3}}</h1>
+  </body>
+</html>
+
+output: 7
