@@ -1,0 +1,53 @@
+Running notes on API
+=====================
+
+What is an API ?
+API - Application Programming Interface. 
+It says about the features of the library. Through the features, one can interact with API.
+
+Example: Menu card in restaurant. The menu card says about the items in the kitchen. Throught the menu card one can order the items 
+and they can get it from the kitchen library.
+Sometimes people will have constraints on the ingredients of the menu items which are technically the arguments passed to the kitchen
+library.
+Finally if the restaurant takes money, u have to pay for your API or you can take for free any time.
+
+API are increasing in exponential way. How to understand and build it properly ?
+Start from the basic:
+1. Server - An another computer without monitor, keyboard and mouse. It is used to store the data and retrieve it etc. Lots
+of functionalities  are there. Most common server is web-server. The server will have webpages and it sends to the client upon 
+request.
+
+Simple analogy:
+In the same way that a program like Solitaire 
+waits for you to click on a card to do something, a web server runs a program that waits for a person to ask it for a web page.
+
+Explain Like I'm Five on API
+============================
+Like how humans view, post, edit the forms showed by websites, computers view, edit, store, manipulate the data using API for 
+simplicity.
+
+How an API is used
+==================
+When two systems are linked together though API then it is called as "Integrated". Now one of the system is called "Server".
+The Server provides the API. API is an another program running in the server. The other system is client and it is seperate
+program that knows what API provides and based on it, the program is built.
+This is a separate program that knows what data is available through the API and can manipulate it, typically at the request of a user. 
+A great example is a smartphone app that syncs with a website. 
+When you push the refresh button your app, it talks to a server via an API and fetches the newest info.
+
+
+I don't know the classifications of API. But the nowadays only one API is very famous which is HTTP API.
+
+HTTP API - Sharing information over the Internet.
+
+There is a standard way of building HTTP API. It's called REST- Representational State Transfer.
+There are 8 different methods in HTTP: [These aren't REST methods]
+GET
+POST
+PUT
+DELETE
+OPTIONS
+HEAD
+TRACE
+CONNECT
+
