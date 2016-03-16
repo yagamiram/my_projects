@@ -65,4 +65,33 @@ Now how API is build on HTTP:
 API is built on top of HTTP to ease the client to send request. 
 
 CHAPTER 3
-=========
+==========
+Explore the data APIs , how it's formatted, and how HTTP makes it possible.
+===========================================================================
+
+The body of the client request can have anyhing. But it is good to
+represent the data's of the body in a specific format.
+
+They are:
+1. JSON
+2. XML
+
+JSON - Key, value format
+XML - XML tags format.
+
+When you are going to send the client request with body in it, it is good
+to specify the data format of the body in "headers" field so that 
+the server can easily read the body.
+
+The term that has to be added in the header is : 'Content-type'
+If Content-type : "application/json" then it means the body is in JSON format.
+Similarly, Server too will send what type of the data format in body to request
+using the same term.
+
+If the client knows only one format of understanding the data then 
+it has to be specified in the "headers" field before-hand during the 
+client request. The term to be specify this is "accept"
+ex: Accept : "application/xml" means the data which server will send should
+be of format XML alone.
+
+
