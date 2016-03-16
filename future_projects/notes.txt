@@ -11,3 +11,7 @@ General need to be a robotics engineer (according to hydroswarm)
 6. Machine learning
 
 WAIT ! No AI ??? I don't know. It varies according to creating of robots. 
+
+Jibo:
+
+1. Face Recognition API [It can be used to find already known people by Jibo. Example: http://facerapp.com/demo]    
