@@ -35,6 +35,8 @@ This is a separate program that knows what data is available through the API and
 A great example is a smartphone app that syncs with a website. 
 When you push the refresh button your app, it talks to a server via an API and fetches the newest info.
 
+So API is a set to rules agreed between two systems to follow. The company who creates the API with the rules that are agreed upon
+and the client will also design as per the rules. So both knows what API can contribue.
 
 I don't know the classifications of API. But the nowadays only one API is very famous which is HTTP API.
 
