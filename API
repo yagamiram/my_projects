@@ -48,7 +48,7 @@ What HTTP Request's has ?
 4 things.
 1. URL
 2. Method - GET, POST, PUT, DELETE etc
-3. Headers - Meta info
+3. Headers - Meta info [information about request or response[]
 4. Body
 
 Here, except body rest should follow the rules as it should be. 
