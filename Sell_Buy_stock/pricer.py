@@ -2,6 +2,7 @@ import heapq
 # http://rgmadvisors.com/problems/orderbook/
 
 def buy_shares_action(buy_shares, target_size, buy):
+    #print "buy is ", buy
     if buy_shares >= target_size:
         # you can buy the shares
         shares = target_size
@@ -12,20 +13,21 @@ def buy_shares_action(buy_shares, target_size, buy):
             # print "element poped is", element
             heap_list.append(element)
             if shares <= element[1]:
-                amount += float(element[0] * -1 * shares)
+                amount += float(element[0])  * shares
                 shares = 0
             else:
                 # print float(element[0]), int(element[1])
                 shares -= element[1]
-                amount += float(element[0]) * -1 * int(element[1])
+                amount += float(element[0])  * int(element[1])
             if shares == 0:
                 break
                 # print "amount is ", amount, shares
-        print "time S " + str(amount)
+        print "time S " + str(-amount)
         for each_ele in heap_list:
             heapq.heappush(buy, each_ele)
             # buy.insert(each_ele)
 def sell_shares_action(sell_shares, target_size, sell):
+    #print "sell is", sell
     if sell_shares >= target_size:
         # you can buy the shares
         shares = target_size
@@ -34,13 +36,14 @@ def sell_shares_action(sell_shares, target_size, sell):
         while True:
             element = heapq.heappop(sell)
             heap_list.append(element)
+            #print element
             if shares <= element[1]:
-                amount += float(element[0] * shares)
+                amount += float(element[0]) * shares
                 shares = 0
             else:
                 shares -= element[1]
                 amount += float(element[0]) * int(element[1])
-            if shares == 0:
+            if shares <= 0:
                 break
         print "time B " + str(amount)
         for each_ele in heap_list:
@@ -66,19 +69,24 @@ def main(target_size):
             # check the buy shares count. If it exceeds then we can buy the share
             # add it to the min heap first
             if each_values[3] == "B":
+                #print "B"
                 heapq.heappush(buy, [float(each_values[4])*-1, float(each_values[5]), each_values[2]])
                 buy_shares += int(each_values[5])
                 buy_dict = {buy[index][2]: index for index in range(len(buy))}
                 buy_shares_action(buy_shares, target_size, buy)
+                buy_dict = {buy[index][2]: index for index in range(len(buy))}
             else:
                 # Selling
+                #print "S"
                 heapq.heappush(sell, [float(each_values[4]), float(each_values[5]), each_values[2]])
                 sell_shares += int(each_values[5])
                 sell_dict = {sell[index][2]: index for index in range(len(sell))}
                 sell_shares_action(sell_shares, target_size, sell)
+                sell_dict = {sell[index][2]: index for index in range(len(sell))}
         else:
             #print "Reduce the share from the book"
             # remove the number of shares in the
+            #print buy_dict, buy
             if each_values[2] in buy_dict:
                 # the order id is in buy
                 index = buy_dict[each_values[2]]
@@ -86,31 +94,38 @@ def main(target_size):
                 # reduce buy shares
                 prev_share = buy_shares
                 buy_shares -= int(each_values[3])
-                if buy[buy_dict[each_values[2]]][1] <= 0:
+                if buy[index][1] <= 0:
                     # remove it
                     buy[index] = buy[-1]
                     buy.pop()
-                    heapq._heapify_max(buy)
+                    heapq.heapify(buy)
+                    buy_dict = {buy[index][2]: index for index in range(len(buy))}
                 if buy_shares >= target_size:
                     buy_shares_action(buy_shares, target_size, buy)
+                    buy_dict = {buy[index][2]: index for index in range(len(buy))}
                 elif prev_share >= target_size:
                     print "time S NA"
+                #print buy_dict
             else:
-                #print "sell dict is", sell_dict
                 index = sell_dict[each_values[2]]
-                #print sell, sell[index][1], each_values[3]
                 sell[index][1] -= int(each_values[3])
                 prev_share = sell_shares
                 sell_shares -=int(each_values[3])
                 # reduce sell shares
                 if sell[sell_dict[each_values[2]]][1] <= 0:
                     # remove it
-                    sell[index] = buy[-1]
+                    sell[index] = sell[-1]
                     sell.pop()
-                    heapq._heapify_max(sell)
+                    heapq.heapify(sell)
+                    sell_dict = {sell[index][2]: index for index in range(len(sell))}
+                '''
+                Before calling the function , u have to check if it is needed or not
+                this case isn't handled
+                '''
                 if sell_shares >= target_size:
                     sell_shares_action(sell_shares, target_size, sell)
+                    sell_dict = {sell[index][2]: index for index in range(len(sell))}
                 elif prev_share >= target_size:
                     print "time B NA"
 if __name__ == "__main__":
-    main(200)
+    main(10000)
