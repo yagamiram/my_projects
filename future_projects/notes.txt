@@ -19,3 +19,4 @@ Jibo:
 
 Example of Arduino + Alexa:
 https://imgur.com/a/7pfOZ
+https://www.reddit.com/r/DIY/comments/4eb0fh/i_made_my_dumb_living_room_blinds_smart/
