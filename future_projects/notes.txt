@@ -26,3 +26,6 @@ http://www.mysensors.org/
 
 This might be needed for robotics + physics:
 http://science.howstuffworks.com/gyroscope.htm
+
+Simple robot using raspberry pi:
+https://learn.adafruit.com/simple-raspberry-pi-robot
