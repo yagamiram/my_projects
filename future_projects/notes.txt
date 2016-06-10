@@ -34,3 +34,7 @@ https://try.github.io/levels/1/challenges/1
 Simple robot using raspberry pi:
 https://learn.adafruit.com/simple-raspberry-pi-robot
 http://www.cube20.org/ [build a robot that solves rubik cube from this link. The link is not build a robot]
+
+
+How to make a spider robot:
+https://renzedevries.wordpress.com/2015/10/
