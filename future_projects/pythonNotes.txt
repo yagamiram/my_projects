@@ -52,4 +52,6 @@ numpy
 ipython[notebook]
 h5py
 
-2. There is a install.sh and setup.py in this directory. That will install all a virtual environment, all packages needed for machine learning. Go for it. 
+2. There is an install.sh and setup.py in this directory. That will install all a virtual environment, all packages needed for machine learning. Go for it. 
+
+How to run: ./install.sh
