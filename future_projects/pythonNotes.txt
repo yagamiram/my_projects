@@ -1,0 +1,35 @@
+Python is an amazing programming language when compared to others. But some of them uses the latest version ~3.0+ or the
+most stable version 2.7
+
+I often get confused or irritated with python packagaes. Most of the packages are inter-related to the other python packages.
+Sometimes, if you need to pip install a package, it will depend on an another package on particular version called "a". Now you
+will install the dependent package with version "A" and everything would become normal. But in future, if you are installing
+a new package which depends on the already dependent package but on higher version "B" then the real problem will start. And if,
+you don't have the root access then you are literally doomed.
+
+One easy solution to work on this is: VIRTUAL ENV
+The python virtual environment will create a brand new environment that won't collide with the exisiting package at any point
+of time. you can do whatever you want.
+
+Anyone can understand from the term "Virtual env" that it is going to be an isolated one. Then why I gave such a long
+info ? Just like that.
+
+How to work on creating the virtualEnv ?
+
+1. First install virtualenv
+
+pip install virtualenv
+
+2. Create a virtual env:
+
+virtualenv testVenv
+
+This will install a directory called "testVenv" in the location you ran the command.
+
+2. Activating the virtual environment:
+
+source testVenv/bin/activate
+
+That's it!
+
+Source: http://pythoncentral.io/how-to-install-virtualenv-python/
