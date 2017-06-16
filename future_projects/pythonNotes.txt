@@ -33,3 +33,23 @@ source testVenv/bin/activate
 That's it!
 
 Source: http://pythoncentral.io/how-to-install-virtualenv-python/
+
+
+Now how to install some packages in the virtual env ?
+
+Option 1: use Pip
+
+Option 2: 
+
+1. create requirements.txt and add all the packages in it.
+
+requirements.txt:
+pandas
+keras
+theano
+tensorflow
+numpy
+ipython[notebook]
+h5py
+
+2. There is a install.sh and setup.py in this directory. That will install all a virtual environment, all packages needed for machine learning. Go for it. 
