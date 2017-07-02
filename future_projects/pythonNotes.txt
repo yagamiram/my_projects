@@ -41,7 +41,7 @@ Option 1: use Pip
 
 Option 2: 
 
-1. create requirements.txt and add all the packages in it.
+1. create requirements.txt and add all the packages in it. [How to install: pip install -r requirements.txt]
 
 requirements.txt:
 pandas
